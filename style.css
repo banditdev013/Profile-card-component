@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: var(--Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0 1.5rem;
+}
+
+.bg-top {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('./images/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -22rem;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-bottom {
+    content: '';
+    width: 70%;
+    height: 100%;
+    display: block;
+    background-image: url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -50%;
+    right: -17%;
+    z-index: -1;
+}
+
+.card-profile {
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-bg-header {
+    position: relative;
+}
+
+.card-bg-header .pattern-card {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.img-profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid white;
+}
+
+.profile {
+    margin: 70px 0 20px;
+    text-align: center;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.profile h3 {
+    font-size: 20px;
+}
+
+.profile span {
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    margin-left: 8px;
+}
+
+.profile p {
+    margin-top: 8px;
+    color: var(--Dark-gray);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #eee;
+}
+
+.card-follow {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--Very-dark-desaturated-blue);
+    margin: 20px 50px;
+}
+
+.card-follow span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+
+.attribution a {
+    color: #ede;
+}
+
+@media screen and (max-width: 500px) {
+    .bg-top {
+        top: -10rem;
+        left: -10rem;
+    }
+
+    .bg-bottom {
+        bottom: -50%;
+        right: -17%;
+    }
+}
