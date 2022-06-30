@@ -84,8 +84,8 @@ body {
     color: var(--Very-dark-desaturated-blue);
 }
 
-.profile h3 {
-    font-size: 20px;
+.profile h1 {
+    font-size: 1.3rem;
 }
 
 .profile span {
@@ -105,7 +105,7 @@ body {
     background: #eee;
 }
 
-.card-follow {
+.stats {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -113,11 +113,21 @@ body {
     margin: 20px 50px;
 }
 
-.card-follow span {
-    font-size: 10px;
+.stats li{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: .7rem;
     letter-spacing: 2px;
     font-weight: 400;
     color: var(--Dark-grayish-blue);
+}
+
+.stats .stats-num {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    letter-spacing: 0;
 }
 
 .attribution {
